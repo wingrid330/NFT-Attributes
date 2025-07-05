@@ -28,7 +28,7 @@ def get_ape_info(ape_id):
     data = {'owner': "", 'image': "", 'eyes': ""}
 
     # YOUR CODE HERE
-    ontract = web3.eth.contract(address=contract_address, abi=abi)
+    contract = web3.eth.contract(address=contract_address, abi=abi)
 
     # Get owner address
     owner = contract.functions.ownerOf(ape_id).call()
